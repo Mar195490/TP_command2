@@ -1,0 +1,25 @@
+class Light {
+    private boolean isOn;
+    private int brightness;
+
+    public Light() {
+        this.isOn = false;
+        this.brightness = 0;
+    }
+
+    public void turnOn() {
+        isOn = true;
+        System.out.println("Light is turned on.");
+    }
+
+    public void turnOff() {
+        isOn = false;
+        System.out.println("Light is turned off.");
+    }
+
+    public void adjustBrightness(int brightness) {
+        this.brightness = brightness;
+        System.out.println("Brightness adjusted to " + brightness);
+    }
+}
+
